@@ -21,12 +21,12 @@ namespace Test2
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
+            //Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            //SetSupportActionBar(toolbar);
             Button btn = FindViewById<Button>(Resource.Id.Button1);
             btn.Click += Btn_Click;
-          
-           
+
+
         }
 
         private void Btn_Click(object sender, EventArgs e)
