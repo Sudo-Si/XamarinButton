@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/txtView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Hello  World!" />
+    <EditText
+        android:id="@+id/editText1"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+    android:hint="Test Text"
+        android:layout_below="@id/txtView1"
+        
+        
+    />
+    <Button
+        android:id="@+id/Button1"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click On Meeeeee!"
+       android:layout_below= "@id/editText1"
+      
+        
+    />
+<TextView
+        android:id="@+id/textView2"
+        android:gravity="bottom"
+        android:visibility="invisible"
+        android:text="this is hidden text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_below="@id/Button1"
+    />
+</RelativeLayout>
